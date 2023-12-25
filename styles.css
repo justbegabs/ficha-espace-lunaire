@@ -1,0 +1,72 @@
+body {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 174, 0, 0.925)), to(rgba(0,0,0,1))) fixed;
+  }
+
+  h1 { 
+    color: white;
+    font-family: 'AstronBoyWonder.ttf';
+    font-size: 100px;
+  }
+
+  h2 {
+    color: white;
+    font-family: 'semi-coder';
+    font-size: 20px;
+  }
+
+  h3 {
+    color: rgb(255, 230, 0)
+  }
+
+  h4 {
+
+    color: white;
+    font-family: 'semi-coder';
+
+  }
+
+  h5 {
+    color: rgb(255, 230, 0);
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'semi-coder';
+  }
+
+  p {
+    color: rgb(255, 230, 0);
+  }
+  
+  td {
+    color: white;
+  }
+
+  .a {
+    font-family: 'semi-coder';
+    color: rgb(255, 230, 0);;
+  }
+
+  .b {
+    font-family: 'semi-coder';
+  }
+  
+  .y {
+    font-family:'semi-coder';
+  }
+
+  .white {
+    color: white;
+    font-family:'semi-coder';
+  }
+
+  .amarelo {
+    color: rgb(255, 230, 0);
+  }
+
+  .yellow {
+    color: rgb(0, 0, 0);
+  }
+
+  .checkbox {
+    color: white;
+    font-family: 'semi-coder';
+  }
