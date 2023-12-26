@@ -75,6 +75,10 @@ td {
   font-family: 'semi-coder';
 }
 
+.classe {
+  display: none;
+}
+
 textarea#story {
   background-color: black;
   color: white;

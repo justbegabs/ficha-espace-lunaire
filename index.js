@@ -49,3 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('item11').addEventListener('change', checkboxAlterada);
     document.getElementById('item12').addEventListener('change', checkboxAlterada);
 });
+
+function alternarVisibilidade(elementId) {
+    var elementoTexto = document.getElementById(elementId);
+
+    // Alterna a visibilidade do texto
+    if (elementoTexto.style.display === 'none') {
+      elementoTexto.style.display = 'block'; // Torna o texto visível
+    } else {
+      elementoTexto.style.display = 'none'; // Torna o texto invisível
+    }
+  }
