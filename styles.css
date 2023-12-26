@@ -50,7 +50,10 @@ td {
   font-family: 'semi-coder';
 }
 
+
 .y {
+  background-color: black;
+  color: white;
   font-family: 'semi-coder';
 }
 
@@ -68,6 +71,18 @@ td {
 }
 
 .checkbox {
+  color: white;
+  font-family: 'semi-coder';
+}
+
+textarea#story {
+  background-color: black;
+  color: white;
+  font-family: 'semi-coder';
+}
+
+textarea#backstory {
+  background-color: black;
   color: white;
   font-family: 'semi-coder';
 }
