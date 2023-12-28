@@ -33,7 +33,7 @@ h5 {
 }
 
 h6 {
-  color: rgb(51, 2, 131);
+  color: rgb(3, 195, 243);
   font-size: medium;
 }
 
@@ -44,8 +44,6 @@ p {
 td {
   color: white;
 }
-
-img {}
 
 .a {
   font-family: 'semi-coder';
@@ -81,8 +79,6 @@ img {}
   color: white;
   font-family: 'semi-coder';
 }
-
-.chkbox {}
 
 .checkbox-input {
   position: absolute;
