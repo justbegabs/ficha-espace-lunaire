@@ -32,6 +32,11 @@ h5 {
   font-family: 'semi-coder';
 }
 
+h6 {
+  color: rgb(54, 8, 128);
+  font-size: medium;
+}
+
 p {
   color: rgb(255, 230, 0);
 }
@@ -39,6 +44,8 @@ p {
 td {
   color: white;
 }
+
+img {}
 
 .a {
   font-family: 'semi-coder';
@@ -73,6 +80,24 @@ td {
 .checkbox {
   color: white;
   font-family: 'semi-coder';
+}
+
+.chkbox {}
+
+.checkbox-input {
+  position: absolute;
+  opacity: 0;
+
+}
+
+.btnquefazsumir {
+  background-color: transparent;
+  border: transparent;
+  margin-left: -2%;
+  color: white;
+  font-family: 'semi-coder';
+  font-size: medium;
+
 }
 
 .classe {

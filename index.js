@@ -8,6 +8,17 @@ function verificarEstadoCheckbox(idEl) {
         document.getElementById(idEl).checked = estadoSalvo === 'true';
     }
 }
+function verificarEstadoCheckbox(idEl) {
+    try {
+        const estadoSalvo = localStorage.getItem(idEl);
+
+        if (estadoSalvo) {
+            document.getElementById(idEl).checked = estadoSalvo === 'true';
+        }
+    } catch (error) {
+        console.error('Erro ao verificar estado da checkbox:', error);
+    }
+}
 
 // Função chamada quando a checkbox é alterada
 function checkboxAlterada(evt) {
