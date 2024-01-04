@@ -1,0 +1,52 @@
+
+  <img src="exemplo.png">
+  <table>
+    <td class="white">Vida</td>
+    <td class="white">Habilidades</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td class="white">Inventário</td>
+    <td class="white">Classes</td>
+    <td class="white">Estilos de Luta</td>
+  </table>
+  <table>
+    <td class="white">Aura</td>
+    <td class="white">Habilidades</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td class="white">Inventário</td>
+    <td class="white">Classes</td>
+    <td class="white">Estilos de Luta</td>
+  </table><table>
+    <td class="white">Potencial</td>
+    <td class="white">Habilidades</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td>&nbsp</td>
+    <td class="white">Inventário</td>
+    <td class="white">Classes</td>
+    <td class="white">Estilos de Luta</td>
+  </table>
+
+
+  edição 351-357

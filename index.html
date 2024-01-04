@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css" />
   <script type="text/javascript" src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
   <title>Caçadores de Luas/Moon Hunters</title>
 </head>
 
@@ -50,12 +51,15 @@
     que passam tem acesso a áreas restritas, lojas de incríveis informações, bem como o direito de chamar-se de Hunter.
     <p>E é aqui que sua história começa.</p>
   </h2>
-  <h6> <u>itens com "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" são clicáveis</u></h6>
+  <h6> itens com <u>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</u> são clicáveis</h6>
   <hr>
-  <h2>Primeiramente, você precisa passar por um mini-teste para ser aplicável para o exame. Qual foi o seu mini-teste?
+  <h2>Primeiramente, você precisa passar por um uma série de testes para ser aplicável para o exame. Qual foi o seu mini-teste?
   </h2>
-  <h3>Dica: fale com seu mestre, ele irá definir isso.</h3>
-  <textarea id="story" name="story" rows="10" cols="55"></textarea>
+  <h3>Dica: fale com seu mestre, ele irá definir isso. ( Na sessão, não se preocupe com isso agora ). </h3>
+  <form id="formulario">
+    <textarea id="story" name="story" rows="10" cols="55"></textarea>
+    <button type="button" onclick="salvarNoLocalStorage()">Salvar</button>
+</form>
   <hr>
   <h2>Agora que você é alguém, apresente-se. Antes você não era importante o suficiente para isso, afinal, se não
     passasse no mini-teste, pra que eu me incomodaria de aprender seu nome e história? Você não faria parte do mundo
@@ -63,20 +67,25 @@
   <table>
     <tr>
       <td class="a">Nome:</td>
-      <td><input type="text" name="nome" class="y" size="41"> <br /></td>
+      <td><input type="text" id="text" name="nome" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>    
     </tr>
     <tr>
       <td class="a">Sobrenome:</td>
-      <td><input type="text" name="sobrenome" class="y" size="41"> <br /></td>
+      <td><input type="text" id="text" name="sobrenome" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>
     </tr>
     <tr>
       <td class="a">Idade:</td>
-      <td><input type="text" name="idade" class="y" size="41"> <br /></td>
+      <td><input type="text" id="text" name="idade" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>
     </tr>
-    <tr>
-      <td class="a">Sua história:</td>
-      <td><textarea id="backstory" name="backstory" rows="20" cols="41"></textarea></td>
-    </tr>
+    <form id="formulario">
+      <tr>
+          <td class="a">Sua história:</td>
+          <td>
+              <textarea id="backstory" name="backstory" rows="20" cols="41"></textarea>
+              <button type="button" onclick="salvarNoLocalStorage()">Salvar</button>
+          </td>
+      </tr>
+  </form>
   </table>
   <hr>
   <h2>Bom, agora que já te connheço melhor, vamos ver no que você é bom. Suas habilidades, estilos de luta, o que você
@@ -116,7 +125,7 @@
   Caçador - <a class="a" href="Amplo">Amplo</a>
 </div> 
   <h4>Agora,vamos definir seu estilo de luta. Depende do seu professor de aura e cada um só pode ter um
-    estilo.</h4>
+    estilo. ( Também não se preocupe com isso agora, o mestre definirá ). </h4>
     <div class="checkbox">
       <input type="checkbox" class="chkbox" id="item1">
     <button onclick="alternarVisibilidade('txt1')" class="btnquefazsumir">
@@ -192,10 +201,10 @@ Esses pontos adicionais podem ser usados para aumentar a capacidade geral de man
 
   <div class="checkbox">
     <input type="checkbox" class="chkbox" id="item4">
-    <button onclick="alternarVisibilidade('txt3')" class="btnquefazsumir">
+    <button onclick="alternarVisibilidade('txt4')" class="btnquefazsumir">
       <u>Assassino</u>
     </button>
-    <div id="txt3" class="classe">
+    <div id="txt4" class="classe">
       Esse estilo de luta tem uma abordagem predominantemente focada em furtividade. Aqui estão os principais pontos:<br>
 
         <span class="amarelo"> Estratégia e Furtividade:</span> Este estilo destaca a importância da estratégia e da furtividade. Os praticantes desse estilo preferem abordagens táticas e evitam confrontos diretos sempre que possível.<br>
@@ -217,12 +226,112 @@ Esses pontos adicionais podem ser usados para aumentar a capacidade geral de man
   </div>
 </div>
   <h4>Para coisas menos importantes então. Sua ficha e habilidades</h4>
-  <img src="exemplo.png">
   <table>
-    <td class="white">Vida</td>
-    <td class="white">Habilidades</td>
-    <td class="white">Inventário</td>
+    <tr>
+      <td class="a">Vida:</td>
+      <td><input type="text" id="backstory" name="vida" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>
+    </tr>
+    <tr>
+      <td class="a">Aura:</td>
+      <td><input type="text" id="backstory" name="aura" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>
+    </tr>
+    <tr>
+      <td class="a">Potencial:</td>
+      <td><input type="text" id="backstory" name="potencial" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>
+    </tr>
+    <tr>
+      <td class="a">Perícias:</td>
+      <td><div class="checkbox">
+        <input type="checkbox" class="chkbox" id="item13">
+        Acrobacia - Corpo
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="chkbox" id="item14">
+        Adestramento - Mente
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="chkbox" id="item15">
+        Assassinar  - Corpo
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="chkbox" id="item16">
+        Atletismo - Corpo
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="chkbox" id="item17">
+        Ciências - Mente
+      <div class="checkbox">
+        <input type="checkbox" class="chkbox" id="item18">
+        Destreza - Corpo
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="chkbox" id="item19">
+        Estratégia - Mente
+      <div class="checkbox">
+        <input type="checkbox" class="chkbox" id="item20">
+        Furtividade  - Aura
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" class="chkbox" id="item21">
+        História - Mente
+      </div>
+        <input type="checkbox" class="chkbox" id="item22">
+        Iniciativa - Corpo
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item23">
+              Intimidação - Mente
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item24">
+              Investigação - Mente
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item25">
+              Luta - Corpo
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item26">
+              Medicina - Mente
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item27">
+              Pilotagem - Corpo
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item28">
+              Profissão - ( escolha do mestre ) <input type="text" name="potencial" class="y" size="10">
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item29">
+              Religião - Mente
+            </div>
+              <input type="checkbox" class="chkbox" id="item30">
+              Sobrevivência - Mente
+                  </div><div class="checkbox">
+                    <input type="checkbox" class="chkbox" id="item31">
+                    Tecnologia - Mente
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" class="chkbox" id="item32">
+                    Treinamento  - Corpo
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" class="chkbox" id="item33">
+                    Vontade - Mente/Aura
+                  </div>  
+        <tr>
+           </td>
+        </tr>
+      </div> </td>
+    </tr>
+    
+    </tr>
   </table>
-  <h4>Por fim, finalmente e nos finais, temos um espaço aqui para você</h4>
-
+  <h4>Por fim, finalmente e nos finais, temos um espaço aqui para você fazer anotações sobre toda e qualquer coisa que quiser</h4>
+  <h3>Dica:anote os números</h3>
+  <form id="formulario">
+  <textarea id="historia" name="backstory" rows="20" cols="60" ></textarea>
+  <button type="button" onclick="salvarNoLocalStorage()">Salvar</button>
+</form>
 </html>

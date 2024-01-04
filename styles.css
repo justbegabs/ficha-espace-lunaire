@@ -11,7 +11,7 @@ h1 {
 h2 {
   color: white;
   font-family: 'semi-coder';
-  font-size: 18px;
+  font-size: s;
 }
 
 h3 {
@@ -33,7 +33,7 @@ h5 {
 }
 
 h6 {
-  color: rgb(5, 0, 54);
+  color: rgb(30, 255, 0);
   font-size: medium;
 }
 
@@ -106,6 +106,12 @@ textarea#story {
 }
 
 textarea#backstory {
+  background-color: black;
+  color: white;
+  font-family: 'semi-coder';
+}
+
+textarea#historia {
   background-color: black;
   color: white;
   font-family: 'semi-coder';
