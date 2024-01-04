@@ -158,26 +158,12 @@ window.onload = function () {
     if (textoSalvoIdade) {
         document.getElementById('idade').value = textoSalvoIdade;
     }
-    
+
     const textoSalvoProfissao = localStorage.getItem('dados_profissao');
-            if (textoSalvoProfissao !== null) {
-                document.getElementById('profissao').value = textoSalvoProfissao;
-            }
-};
+    if (textoSalvoProfissao !== null) {
+        document.getElementById('profissao').value = textoSalvoProfissao;
+    }
 
-
-function salvarNoLocalStorage(campo) {
-    const texto = document.getElementById(campo).value;
-
-    // Salva o texto diretamente no localStorage
-    localStorage.setItem('dados_' + campo, texto);
-
-    alert('Texto salvo no localStorage!');
-}
-
-// Carrega os dados do localStorage ao carregar a página (opcional)
-window.onload = function() {
-    // Recupera o texto diretamente do localStorage para 'historia'
     const textoSalvoHistoria = localStorage.getItem('dados_historia');
     if (textoSalvoHistoria) {
         document.getElementById('historia').value = textoSalvoHistoria;
