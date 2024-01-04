@@ -110,28 +110,88 @@ function alternarVisibilidade(elementId) {
 
     // Alterna a visibilidade do texto
     if (elementoTexto.style.display === 'none') {
-      elementoTexto.style.display = 'block'; // Torna o texto visível
+        elementoTexto.style.display = 'block'; // Torna o texto visível
     } else {
-      elementoTexto.style.display = 'none'; // Torna o texto invisível
+        elementoTexto.style.display = 'none'; // Torna o texto invisível
     }
-  }
+}
 
-  function salvarNoLocalStorage() {
-    const texto = document.getElementById('backstory').value;
+function salvarNoLocalStorage(campo) {
+    const texto = document.getElementById(campo).value;
 
     // Salva o texto diretamente no localStorage
-    localStorage.setItem('dados_texto', texto);
+    localStorage.setItem('dados_' + campo, texto);
+
+    alert('Texto salvo no localStorage!');
+}
+
+// Carrega os dados do localStorage ao carregar a página (opcional)
+window.onload = function () {
+    // Recupera o texto diretamente do localStorage para 'vida'
+    const textoSalvoVida = localStorage.getItem('dados_vida');
+    if (textoSalvoVida) {
+        document.getElementById('vida').value = textoSalvoVida;
+    }
+
+    // Recupera o texto diretamente do localStorage para 'aura'
+    const textoSalvoAura = localStorage.getItem('dados_aura');
+    if (textoSalvoAura) {
+        document.getElementById('aura').value = textoSalvoAura;
+    }
+
+    const textoSalvoPotencial = localStorage.getItem('dados_potencial');
+    if (textoSalvoPotencial) {
+        document.getElementById('potencial').value = textoSalvoPotencial;
+    }
+
+    const textoSalvoNome = localStorage.getItem('dados_nome');
+    if (textoSalvoNome) {
+        document.getElementById('nome').value = textoSalvoNome;
+    }
+
+    const textoSalvoSobrenome = localStorage.getItem('dados_sobrenome');
+    if (textoSalvoSobrenome) {
+        document.getElementById('sobrenome').value = textoSalvoSobrenome;
+    }
+
+    const textoSalvoIdade = localStorage.getItem('dados_idade');
+    if (textoSalvoIdade) {
+        document.getElementById('idade').value = textoSalvoIdade;
+    }
+    
+    const textoSalvoProfissao = localStorage.getItem('dados_profissao');
+            if (textoSalvoProfissao !== null) {
+                document.getElementById('profissao').value = textoSalvoProfissao;
+            }
+};
+
+
+function salvarNoLocalStorage(campo) {
+    const texto = document.getElementById(campo).value;
+
+    // Salva o texto diretamente no localStorage
+    localStorage.setItem('dados_' + campo, texto);
 
     alert('Texto salvo no localStorage!');
 }
 
 // Carrega os dados do localStorage ao carregar a página (opcional)
 window.onload = function() {
-    // Recupera o texto diretamente do localStorage
-    const textoSalvo = localStorage.getItem('dados_texto');
+    // Recupera o texto diretamente do localStorage para 'historia'
+    const textoSalvoHistoria = localStorage.getItem('dados_historia');
+    if (textoSalvoHistoria) {
+        document.getElementById('historia').value = textoSalvoHistoria;
+    }
 
-    // Verifica se há texto salvo
-    if (textoSalvo) {
-        document.getElementById('backstory').value = textoSalvo;
+    // Recupera o texto diretamente do localStorage para 'story'
+    const textoSalvoStory = localStorage.getItem('dados_story');
+    if (textoSalvoStory) {
+        document.getElementById('story').value = textoSalvoStory;
+    }
+
+    // Recupera o texto diretamente do localStorage para 'backstory'
+    const textoSalvoBackstory = localStorage.getItem('dados_backstory');
+    if (textoSalvoBackstory) {
+        document.getElementById('backstory').value = textoSalvoBackstory;
     }
 };

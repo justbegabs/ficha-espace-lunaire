@@ -56,10 +56,9 @@
   <h2>Primeiramente, você precisa passar por um uma série de testes para ser aplicável para o exame. Qual foi o seu mini-teste?
   </h2>
   <h3>Dica: fale com seu mestre, ele irá definir isso. ( Na sessão, não se preocupe com isso agora ). </h3>
-  <form id="formulario">
-    <textarea id="story" name="story" rows="10" cols="55"></textarea>
-    <button type="button" onclick="salvarNoLocalStorage()">Salvar</button>
-</form>
+  <label for="historia" class="historia">Seu Teste:</label>
+    <textarea id="historia" name="historia" rows="5" cols="40"></textarea>
+    <button type="button" onclick="salvarNoLocalStorage('historia')">Salvar</button>
   <hr>
   <h2>Agora que você é alguém, apresente-se. Antes você não era importante o suficiente para isso, afinal, se não
     passasse no mini-teste, pra que eu me incomodaria de aprender seu nome e história? Você não faria parte do mundo
@@ -67,22 +66,31 @@
   <table>
     <tr>
       <td class="a">Nome:</td>
-      <td><input type="text" id="text" name="nome" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>    
-    </tr>
-    <tr>
-      <td class="a">Sobrenome:</td>
-      <td><input type="text" id="text" name="sobrenome" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>
-    </tr>
-    <tr>
-      <td class="a">Idade:</td>
-      <td><input type="text" id="text" name="idade" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>
-    </tr>
-    <form id="formulario">
+      <td>
+          <input type="text" id="nome" name="nome" class="y" size="41">
+          <button type="button" onclick="salvarNoLocalStorage('nome')">Salvar</button>
+      </td>
+  </tr>
+  <tr>
+    <td class="a">Sobrenome:</td>
+    <td>
+        <input type="text" id="sobrenome" name="sobrenome" class="y" size="41">
+        <button type="button" onclick="salvarNoLocalStorage('sobrenome')">Salvar</button>
+    </td>
+</tr>
+<tr>
+  <td class="a">Idade:</td>
+  <td>
+      <input type="text" id="idade" name="idade" class="y" size="41">
+      <button type="button" onclick="salvarNoLocalStorage('idade')">Salvar</button>
+  </td>
+</tr>
+   
       <tr>
-          <td class="a">Sua história:</td>
+          <td label for="story" class="story">Sua História: </label></td>
           <td>
-              <textarea id="backstory" name="backstory" rows="20" cols="41"></textarea>
-              <button type="button" onclick="salvarNoLocalStorage()">Salvar</button>
+            <textarea id="story" name="story" rows="5" cols="40"></textarea>
+            <button type="button" onclick="salvarNoLocalStorage('story')">Salvar</button>
           </td>
       </tr>
   </form>
@@ -229,16 +237,25 @@ Esses pontos adicionais podem ser usados para aumentar a capacidade geral de man
   <table>
     <tr>
       <td class="a">Vida:</td>
-      <td><input type="text" id="backstory" name="vida" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>
-    </tr>
+      <td>
+          <input type="text" id="vida" name="vida" class="y" size="41">
+          <button type="button" onclick="salvarNoLocalStorage('vida')">Salvar</button>
+      </td>
+  </tr>
     <tr>
       <td class="a">Aura:</td>
-      <td><input type="text" id="backstory" name="aura" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>
-    </tr>
-    <tr>
-      <td class="a">Potencial:</td>
-      <td><input type="text" id="backstory" name="potencial" class="y" size="41"> <button type="button" onclick="salvarNoLocalStorage()">Salvar</button> <br /></td>
-    </tr>
+      <td>
+          <input type="text" id="aura" name="aura" class="y" size="41">
+          <button type="button" onclick="salvarNoLocalStorage('aura')">Salvar</button>
+      </td>
+  </tr>
+  <tr>
+    <td class="a">Potencial:</td>
+    <td>
+        <input type="text" id="potencial" name="potencial" class="y" size="41">
+        <button type="button" onclick="salvarNoLocalStorage('potencial')">Salvar</button>
+    </td>
+</tr>
     <tr>
       <td class="a">Perícias:</td>
       <td><div class="checkbox">
@@ -300,7 +317,8 @@ Esses pontos adicionais podem ser usados para aumentar a capacidade geral de man
             </div>
             <div class="checkbox">
               <input type="checkbox" class="chkbox" id="item28">
-              Profissão - ( escolha do mestre ) <input type="text" name="potencial" class="y" size="10">
+              Profissão - ( escolha do mestre ) <input type="text" id="profissao" name="profissao" class="y" size="10">   <button type="button" onclick="salvarNoLocalStorage('profissao')">Salvar</button>
+
             </div>
             <div class="checkbox">
               <input type="checkbox" class="chkbox" id="item29">
@@ -330,8 +348,7 @@ Esses pontos adicionais podem ser usados para aumentar a capacidade geral de man
   </table>
   <h4>Por fim, finalmente e nos finais, temos um espaço aqui para você fazer anotações sobre toda e qualquer coisa que quiser</h4>
   <h3>Dica:anote os números</h3>
-  <form id="formulario">
-  <textarea id="historia" name="backstory" rows="20" cols="60" ></textarea>
-  <button type="button" onclick="salvarNoLocalStorage()">Salvar</button>
-</form>
+  <label for="backstory" class="backstory">Sua trajetória:</label>
+  <textarea id="backstory" name="backstory" rows="5" cols="40"></textarea>
+  <button type="button" onclick="salvarNoLocalStorage('backstory')">Salvar</button>
 </html>

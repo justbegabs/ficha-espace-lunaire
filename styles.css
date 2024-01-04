@@ -99,6 +99,21 @@ td {
   display: none;
 }
 
+.historia{
+font-family: "semi-coder";
+color: rgb(255, 230, 0);
+}
+
+.story{
+  font-family: "semi-coder";
+  color: rgb(255, 230, 0);
+}
+
+.backstory{
+  font-family: "semi-coder";
+  color: rgb(255, 230, 0);
+}
+
 textarea#story {
   background-color: black;
   color: white;
@@ -116,3 +131,4 @@ textarea#historia {
   color: white;
   font-family: 'semi-coder';
 }
+
