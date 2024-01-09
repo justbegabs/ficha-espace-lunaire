@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="styles.css" />
   <script type="text/javascript" src="index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
@@ -53,12 +54,13 @@
   </h2>
   <h6> itens com <u>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"</u> são clicáveis</h6>
   <hr>
-  <h2>Primeiramente, você precisa passar por um uma série de testes para ser aplicável para o exame. Qual foi o seu mini-teste?
+  <h2>Primeiramente, você precisa passar por um uma série de testes para ser aplicável para o exame. Qual foi o seu
+    teste?
   </h2>
   <h3>Dica: fale com seu mestre, ele irá definir isso. ( Na sessão, não se preocupe com isso agora ). </h3>
   <label for="historia" class="historia">Seu Teste:</label>
-    <textarea id="historia" name="historia" rows="5" cols="40"></textarea>
-    <button type="button" onclick="salvarNoLocalStorage('historia')">Salvar</button>
+  <textarea id="historia" name="historia" rows="5" cols="40"></textarea>
+  <button type="button" onclick="salvarNoLocalStorage('historia')">Salvar</button>
   <hr>
   <h2>Agora que você é alguém, apresente-se. Antes você não era importante o suficiente para isso, afinal, se não
     passasse no mini-teste, pra que eu me incomodaria de aprender seu nome e história? Você não faria parte do mundo
@@ -67,288 +69,401 @@
     <tr>
       <td class="a">Nome:</td>
       <td>
-          <input type="text" id="nome" name="nome" class="y" size="41">
-          <button type="button" onclick="salvarNoLocalStorage('nome')">Salvar</button>
+        <input type="text" id="nome" name="nome" class="y" size="41">
+        <button type="button" onclick="salvarNoLocalStorage('nome')">Salvar</button>
       </td>
-  </tr>
-  <tr>
-    <td class="a">Sobrenome:</td>
-    <td>
+    </tr>
+    <tr>
+      <td class="a">Sobrenome:</td>
+      <td>
         <input type="text" id="sobrenome" name="sobrenome" class="y" size="41">
         <button type="button" onclick="salvarNoLocalStorage('sobrenome')">Salvar</button>
-    </td>
-</tr>
-<tr>
-  <td class="a">Idade:</td>
-  <td>
-      <input type="text" id="idade" name="idade" class="y" size="41">
-      <button type="button" onclick="salvarNoLocalStorage('idade')">Salvar</button>
-  </td>
-</tr>
-   
-      <tr>
-          <td label for="story" class="story">Sua História: </label></td>
-          <td>
-            <textarea id="story" name="story" rows="5" cols="40"></textarea>
-            <button type="button" onclick="salvarNoLocalStorage('story')">Salvar</button>
-          </td>
-      </tr>
-  </form>
+      </td>
+    </tr>
+    <tr>
+      <td class="a">Idade:</td>
+      <td>
+        <input type="text" id="idade" name="idade" class="y" size="41">
+        <button type="button" onclick="salvarNoLocalStorage('idade')">Salvar</button>
+      </td>
+    </tr>
+
+    <tr>
+      <td label for="story" class="story">Sua História: </label></td>
+      <td>
+        <textarea id="story" name="story" rows="5" cols="40"></textarea>
+        <button type="button" onclick="salvarNoLocalStorage('story')">Salvar</button>
+      </td>
+    </tr>
   </table>
   <hr>
   <h2>Bom, agora que já te connheço melhor, vamos ver no que você é bom. Suas habilidades, estilos de luta, o que você
     carrega consigo e afins. </h2>
-  <h4>Em primeiro lugar,  vamos definir a sua classe. Escolha entre <a class="a" href="Amplo">Amplo</a>, <a class="a" href="Combate">Combate</a>, <a class="a"
-    href="Estratégia">Estratégia</a> ou <a class="a" href="Aura">Melhoria de Aura</a>.</h4>
-<div class="checkbox">
-  <input type="checkbox" class="chkbox" id="item5">
-  Prático - <a class="a" href="Aura">Melhoria de Aura</a>
-</div>
-<div class="checkbox">
-  <input type="checkbox" class="chkbox" id="item6">
-  Meditativo - <a class="a" href="Aura">Melhoria de Aura</a>
-</div>
-<div class="checkbox">
-  <input type="checkbox" class="chkbox" id="item7">
-  Preciso - <a class="a" href="Estratégia">Estratégia</a>
-</div>
-<div class="checkbox">
-  <input type="checkbox" class="chkbox" id="item8">
-  Sensitivo - <a class="a" href="Estratégia">Estratégia</a>
-</div>
-<div class="checkbox">
-  <input type="checkbox" class="chkbox" id="item9">
-  Ofensivo - <a class="a" href="Combate">Combate</a>
-</div>
-<div class="checkbox">
-  <input type="checkbox" class="chkbox" id="item10">
-  Bersek - <a class="a" href="Combate">Combate</a>
-</div>
-<div class="checkbox">
-  <input type="checkbox" class="chkbox" id="item11">
-  Mestre em Luta - <a class="a" href="Amplo">Amplo</a>
-</div>
-<div class="checkbox">
-  <input type="checkbox" class="chkbox" id="item12">
-  Caçador - <a class="a" href="Amplo">Amplo</a>
-</div> 
+  <h4>Em primeiro lugar, vamos definir a sua classe. Escolha entre <a class="a" href="Amplo.html">Amplo</a>, <a
+      class="a" href="Combate">Combate</a>, <a class="a" href="Estratégia">Estratégia</a> ou <a class="a"
+      href="Aura">Melhoria de Aura</a> Por enquanto para saber melhor sobre eles, olhe em <a class="amarelo"
+      href="https//app.milanote.com/1R7NK91X0vB40G/mestre-em-luta?p=13eBrMeOZRi"> <link class="amarelo" href="https//app.milanote.com/1R7NK91X0vB40G/mestre-em-luta?p=13eBrMeOZRi"> Site do Predo</a> </h4>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item5">
+    Prático - <a class="a" href="Aura">Melhoria de Aura</a>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item6">
+    Meditativo - <a class="a" href="Aura">Melhoria de Aura</a>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item7">
+    Preciso - <a class="a" href="Estratégia">Estratégia</a>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item8">
+    Sensitivo - <a class="a" href="Estratégia">Estratégia</a>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item9">
+    Ofensivo - <a class="a" href="Combate">Combate</a>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item10">
+    Bersek - <a class="a" href="Combate">Combate</a>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item11">
+    Mestre em Luta - <a class="a" href="Amplo.html">Amplo</a>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item12">
+    Caçador - <a class="a" href="Amplo.html">Amplo</a>
+  </div>
   <h4>Agora,vamos definir seu estilo de luta. Depende do seu professor de aura e cada um só pode ter um
     estilo. ( Também não se preocupe com isso agora, o mestre definirá ). </h4>
-    <div class="checkbox">
-      <input type="checkbox" class="chkbox" id="item1">
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item1">
     <button onclick="alternarVisibilidade('txt1')" class="btnquefazsumir">
       <u>Focado</u>
     </button>
     <div id="txt1" class="classe">
       Dentro desse estilo de luta específico, há algumas regras adicionais:<br>
       <br>
-      Contra-Ataque Universal: Você tem a habilidade de contra-atacar praticamente qualquer coisa, inclusive projéteis, contanto que o objeto que está sendo contra-atacado seja pelo menos o dobro do seu tamanho.<br>
-      Limite de Tamanho para Contra-Ataque: Se um objeto ou ataque for mais do que o dobro do seu tamanho, você será incapaz de contra-atacar.<br>
-      Bônus em Habilidade de Luta: Para recompensar o estilo de luta baseado em contra-ataque, você recebe um bônus considerável de +8 em sua Especialidade Luta e +10 em Defesa.<br>
+      Contra-Ataque Universal: Você tem a habilidade de contra-atacar praticamente qualquer coisa, inclusive projéteis,
+      contanto que o objeto que está sendo contra-atacado seja pelo menos o dobro do seu tamanho.<br>
+      Limite de Tamanho para Contra-Ataque: Se um objeto ou ataque for mais do que o dobro do seu tamanho, você será
+      incapaz de contra-atacar.<br>
+      Bônus em Habilidade de Luta: Para recompensar o estilo de luta baseado em contra-ataque, você recebe um bônus
+      considerável de +8 em sua Especialidade Luta e +10 em Defesa.<br>
       <br>
       Bônus Extras:<br>
       <br>
       Número de Reações por Rodada: Os personagens têm a capacidade de realizar até 2 reações por rodada.<br>
       Habilidade Sequencia: A habilidade Sequencia está disponível a partir do nível 5.<br>
       Habilidade Luta Justa: Luta Justa está disponível a partir do nível 5.<br>
-      Bônus de Pontos Adicionais: Personagens recebem um bônus de +2 em Corpo como pontos adicionais.<br>    </div>
+      Bônus de Pontos Adicionais: Personagens recebem um bônus de +2 em Corpo como pontos adicionais.<br>
+    </div>
   </div>
-    
+
   <div class="checkbox">
     <input type="checkbox" class="chkbox" id="item2">
     <button onclick="alternarVisibilidade('txt2')" class="btnquefazsumir">
       <u>Evasivo</u>
     </button>
     <div id="txt2" class="classe">
-      Esse estilo de luta tem uma abordagem predominantemente focada em esquivas e ataques à distância. Aqui estão os principais pontos:<br>
-<br>
-Esquiva Predominante: A característica central desse estilo é a ênfase na esquiva. Sempre que um oponente realizar um ataque contra você, você recebe um bônus de +5 em Reflexos contra esse ataque. Esse bônus sugere que o praticante desse estilo é particularmente ágil e capaz de se mover rapidamente para evitar ataques físicos. <br>
-Ataques à Distância: Além da esquiva, esse estilo favorece ataques à distância. Isso significa que o lutador prefere engajar o inimigo de longe, utilizando armas ou habilidades que permitem atacar sem a necessidade de proximidade física. Isso pode incluir arcos, Hatsus ou outras formas de ataque à distância. <br>
-Bônus em Destreza: Para enfatizar a habilidade do praticante em ataques à distância, ele recebe um bônus de +6 em Destreza. Esse bônus indica que o lutador é preciso e eficaz ao mirar e atacar alvos à distância. <br>
-<br>
-Bônus Extras:<br>
-<br>
-2d6 em Dano de Ataques à Distância: Personagens que utilizam esse estilo de luta recebem um bônus de +2d6 no dano ao realizar ataques à distância. <br>
-<br>
-Esse benefício destaca a eficácia do estilo em combates de longo alcance. <br>
-Habilidade Masterizando: A habilidade Masterizando é recebida ao usar esse estilo de luta. <br>
-Habilidade Descarga de Aura: A habilidade Descarga de Aura é recebida ao usar esse estilo de luta. <br>
-<br>
-+2 Pontos Adicionais em Aura: Personagens que adotam esse estilo de luta recebem +2 pontos adicionais em Aura como benefício adicional. <br>
+      Esse estilo de luta tem uma abordagem predominantemente focada em esquivas e ataques à distância. Aqui estão os
+      principais pontos:<br>
+      <br>
+      Esquiva Predominante: A característica central desse estilo é a ênfase na esquiva. Sempre que um oponente realizar
+      um ataque contra você, você recebe um bônus de +5 em Reflexos contra esse ataque. Esse bônus sugere que o
+      praticante desse estilo é particularmente ágil e capaz de se mover rapidamente para evitar ataques físicos. <br>
+      Ataques à Distância: Além da esquiva, esse estilo favorece ataques à distância. Isso significa que o lutador
+      prefere engajar o inimigo de longe, utilizando armas ou habilidades que permitem atacar sem a necessidade de
+      proximidade física. Isso pode incluir arcos, Hatsus ou outras formas de ataque à distância. <br>
+      Bônus em Destreza: Para enfatizar a habilidade do praticante em ataques à distância, ele recebe um bônus de +6 em
+      Destreza. Esse bônus indica que o lutador é preciso e eficaz ao mirar e atacar alvos à distância. <br>
+      <br>
+      Bônus Extras:<br>
+      <br>
+      2d6 em Dano de Ataques à Distância: Personagens que utilizam esse estilo de luta recebem um bônus de +2d6 no dano
+      ao realizar ataques à distância. <br>
+      <br>
+      Esse benefício destaca a eficácia do estilo em combates de longo alcance. <br>
+      Habilidade Masterizando: A habilidade Masterizando é recebida ao usar esse estilo de luta. <br>
+      Habilidade Descarga de Aura: A habilidade Descarga de Aura é recebida ao usar esse estilo de luta. <br>
+      <br>
+      +2 Pontos Adicionais em Aura: Personagens que adotam esse estilo de luta recebem +2 pontos adicionais em Aura como
+      benefício adicional. <br>
 
-Esses pontos adicionais podem ser usados para aumentar a capacidade geral de manipulação de Aura do personagem.
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" class="chkbox" id="item3">
-            <button onclick="alternarVisibilidade('txt3')" class="btnquefazsumir">
-              <u>Bersek</u>
-            </button>
-            <div id="txt3" class="classe">
-              Esse estilo de luta tem uma abordagem predominantemente focada em esquivas e ataques à distância. Aqui estão os principais pontos:<br>
+      Esses pontos adicionais podem ser usados para aumentar a capacidade geral de manipulação de Aura do personagem.
+    </div>
+    <div class="checkbox">
+      <input type="checkbox" class="chkbox" id="item3">
+      <button onclick="alternarVisibilidade('txt3')" class="btnquefazsumir">
+        <u>Bersek</u>
+      </button>
+      <div id="txt3" class="classe">
+        Esse estilo de luta tem uma abordagem predominantemente focada em esquivas e ataques à distância. Aqui estão os
+        principais pontos:<br>
         <br>
-        Esse estilo de luta é caracterizado por um enfoque direto na força bruta e no combate corpo a corpo sem muitas restrições. Aqui estão os principais pontos:
-<br>
-<br>
-    <span class="amarelo">Estilo de Pancadaria Livre:</span> A abordagem desse estilo é bastante direta, sem muita sofisticação técnica. Os praticantes desse estilo preferem a pancadaria livre, o que implica em ataques físicos diretos e poderosos.<br>
-    <span class="amarelo">Bônus em Habilidade de Luta:</span> Para refletir a ênfase na pancadaria e na habilidade bruta de combate, o praticante desse estilo recebe um bônus substancial de +10 em sua habilidade de Luta. Esse bônus indica que o lutador é particularmente hábil em ataques físicos, possuindo uma grande força e eficácia no combate corpo a corpo.<br>
-    <span class="amarelo">Bônus em Reflexos:</span> Embora o estilo seja focado na força, você também recebe um bônus de +4 em Reflexos. Isso sugere que, apesar da abordagem direta, os praticantes desse estilo também possuem uma agilidade notável para esquivar-se de ataques e reagir rapidamente durante o combate.<br>
-    <br>
-    <span class="amarelo">Bônus Extras:</span>
-    <br>
-    <span class="amarelo"><span class="yellow">+3d10</span> em Dano de Armas de Impacto:</span> Personagens que utilizam esse estilo de luta recebem um bônus de +3d10 no dano ao realizar ataques com armas de impacto.<br>
-    <br>
-    Esse benefício destaca a eficácia do estilo em combates corpo a corpo com armas de impacto.<br>
-    <span class="amarelo">Habilidade Pressionar:</span> A habilidade Pressionar é recebida ao usar esse estilo de luta.<br>
-    <span class="amarelo">Habilidade Ativo:</span> A habilidade Ativo é recebida ao usar esse estilo de luta.<br>
-    <br>
-    <span class="amarelo">+2 Pontos Adicionais em Corpo:</span> Personagens que adotam esse estilo de luta recebem +2 pontos adicionais em Corpo como benefício adicional.<br>
-    <br>
-    Esses pontos adicionais podem ser usados para aumentar a capacidade física e resistência do personagem.</p>
-          </div>
-  </div>
-
-  <div class="checkbox">
-    <input type="checkbox" class="chkbox" id="item4">
-    <button onclick="alternarVisibilidade('txt4')" class="btnquefazsumir">
-      <u>Assassino</u>
-    </button>
-    <div id="txt4" class="classe">
-      Esse estilo de luta tem uma abordagem predominantemente focada em furtividade. Aqui estão os principais pontos:<br>
-
-        <span class="amarelo"> Estratégia e Furtividade:</span> Este estilo destaca a importância da estratégia e da furtividade. Os praticantes desse estilo preferem abordagens táticas e evitam confrontos diretos sempre que possível.<br>
-        <span class="amarelo">Bônus em Furtividade:</span> Para refletir a habilidade furtiva desse estilo, o praticante recebe um bônus de +5 em Furtividade. Isso sugere que são particularmente habilidosos em se mover silenciosamente e se esconder, sendo capazes de se aproximar de seus alvos sem serem detectados.<br>
-        <span class="amarelo">Ataques Silenciosos:</span> A habilidade de deixar seres inconscientes em apenas 1 ataque é uma característica marcante desse estilo. A condição adicional de girar 1d6, onde um número par permite realizar a ação, adiciona um elemento de aleatoriedade e risco ao processo. Essa mecânica sugere que, apesar da eficácia do praticante em ataques furtivos, ainda existe um grau de incerteza envolvido.<br>
-        <span class="amarelo">Bônus em Habilidade de Luta e Reflexos:</span> Embora o estilo seja focado em estratégia e furtividade, o praticante também recebe bônus em habilidades mais diretas. +2 em Luta indica uma capacidade decente em combate físico, enquanto +4 em Reflexos destaca a agilidade e a capacidade de reação rápida durante o combate.<br>
+        Esse estilo de luta é caracterizado por um enfoque direto na força bruta e no combate corpo a corpo sem muitas
+        restrições. Aqui estão os principais pontos:
+        <br>
+        <br>
+        <span class="amarelo">Estilo de Pancadaria Livre:</span> A abordagem desse estilo é bastante direta, sem muita
+        sofisticação técnica. Os praticantes desse estilo preferem a pancadaria livre, o que implica em ataques físicos
+        diretos e poderosos.<br>
+        <span class="amarelo">Bônus em Habilidade de Luta:</span> Para refletir a ênfase na pancadaria e na habilidade
+        bruta de combate, o praticante desse estilo recebe um bônus substancial de +10 em sua habilidade de Luta. Esse
+        bônus indica que o lutador é particularmente hábil em ataques físicos, possuindo uma grande força e eficácia no
+        combate corpo a corpo.<br>
+        <span class="amarelo">Bônus em Reflexos:</span> Embora o estilo seja focado na força, você também recebe um
+        bônus de +4 em Reflexos. Isso sugere que, apesar da abordagem direta, os praticantes desse estilo também possuem
+        uma agilidade notável para esquivar-se de ataques e reagir rapidamente durante o combate.<br>
         <br>
         <span class="amarelo">Bônus Extras:</span>
         <br>
-        <span class="amarelo"><span class="yellow">+2d6</span> em Dano de Ataques Furtivos:</span> Personagens que utilizam esse estilo de luta recebem um bônus de +2d6 no dano ao realizar ataques furtivos.<br>
+        <span class="amarelo"><span class="yellow">+3d10</span> em Dano de Armas de Impacto:</span> Personagens que
+        utilizam esse estilo de luta recebem um bônus de +3d10 no dano ao realizar ataques com armas de impacto.<br>
+        <br>
+        Esse benefício destaca a eficácia do estilo em combates corpo a corpo com armas de impacto.<br>
+        <span class="amarelo">Habilidade Pressionar:</span> A habilidade Pressionar é recebida ao usar esse estilo de
+        luta.<br>
+        <span class="amarelo">Habilidade Ativo:</span> A habilidade Ativo é recebida ao usar esse estilo de luta.<br>
+        <br>
+        <span class="amarelo">+2 Pontos Adicionais em Corpo:</span> Personagens que adotam esse estilo de luta recebem
+        +2 pontos adicionais em Corpo como benefício adicional.<br>
+        <br>
+        Esses pontos adicionais podem ser usados para aumentar a capacidade física e resistência do personagem.</p>
+      </div>
+    </div>
+
+    <div class="checkbox">
+      <input type="checkbox" class="chkbox" id="item4">
+      <button onclick="alternarVisibilidade('txt4')" class="btnquefazsumir">
+        <u>Assassino</u>
+      </button>
+      <div id="txt4" class="classe">
+        Esse estilo de luta tem uma abordagem predominantemente focada em furtividade. Aqui estão os principais
+        pontos:<br>
+
+        <span class="amarelo"> Estratégia e Furtividade:</span> Este estilo destaca a importância da estratégia e da
+        furtividade. Os praticantes desse estilo preferem abordagens táticas e evitam confrontos diretos sempre que
+        possível.<br>
+        <span class="amarelo">Bônus em Furtividade:</span> Para refletir a habilidade furtiva desse estilo, o praticante
+        recebe um bônus de +5 em Furtividade. Isso sugere que são particularmente habilidosos em se mover
+        silenciosamente e se esconder, sendo capazes de se aproximar de seus alvos sem serem detectados.<br>
+        <span class="amarelo">Ataques Silenciosos:</span> A habilidade de deixar seres inconscientes em apenas 1 ataque
+        é uma característica marcante desse estilo. A condição adicional de girar 1d6, onde um número par permite
+        realizar a ação, adiciona um elemento de aleatoriedade e risco ao processo. Essa mecânica sugere que, apesar da
+        eficácia do praticante em ataques furtivos, ainda existe um grau de incerteza envolvido.<br>
+        <span class="amarelo">Bônus em Habilidade de Luta e Reflexos:</span> Embora o estilo seja focado em estratégia e
+        furtividade, o praticante também recebe bônus em habilidades mais diretas. +2 em Luta indica uma capacidade
+        decente em combate físico, enquanto +4 em Reflexos destaca a agilidade e a capacidade de reação rápida durante o
+        combate.<br>
+        <br>
+        <span class="amarelo">Bônus Extras:</span>
+        <br>
+        <span class="amarelo"><span class="yellow">+2d6</span> em Dano de Ataques Furtivos:</span> Personagens que
+        utilizam esse estilo de luta recebem um bônus de +2d6 no dano ao realizar ataques furtivos.<br>
         <br>
         Esse benefício destaca a eficácia do estilo em situações de emboscada e ataques sorrateiros.<br>
-        <span class="amarelo">Habilidade Assassinar:</span> A habilidade Assassinar é recebida ao usar esse estilo de luta.<br>
+        <span class="amarelo">Habilidade Assassinar:</span> A habilidade Assassinar é recebida ao usar esse estilo de
+        luta.<br>
         <span class="amarelo">Habilidade Vulto:</span> A habilidade Vulto é recebida ao usar esse estilo de luta.<br>
         <br>
-        <span class="amarelo">+2 Pontos Adicionais em Aura:</span> Personagens que adotam esse estilo de luta recebem +2 pontos adicionais em Aura como benefício adicional.<br>
+        <span class="amarelo">+2 Pontos Adicionais em Aura:</span> Personagens que adotam esse estilo de luta recebem +2
+        pontos adicionais em Aura como benefício adicional.<br>
         <br>
-        Esses pontos adicionais podem ser usados para aumentar a capacidade geral de manipulação de Aura do personagem.</p>
-  </div>
-</div>
-  <h4>Para coisas menos importantes então. Sua ficha e habilidades</h4>
-  <table>
-    <tr>
-      <td class="a">Vida:</td>
-      <td>
+        Esses pontos adicionais podem ser usados para aumentar a capacidade geral de manipulação de Aura do personagem.
+        </p>
+      </div>
+    </div>
+    <h4>Para coisas menos importantes então. Sua ficha e habilidades. Você vai pegar os valores da sua classe para Vida,
+      Aura e Potencial e girar 1d6+2 para determinar o valor de cada um da quantidade de perícias específicada também em
+      sua classe.</h4>
+    <table>
+      <tr>
+        <td class="a">Vida:</td>
+        <td>
           <input type="text" id="vida" name="vida" class="y" size="41">
           <button type="button" onclick="salvarNoLocalStorage('vida')">Salvar</button>
-      </td>
-  </tr>
-    <tr>
-      <td class="a">Aura:</td>
-      <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="a">Aura:</td>
+        <td>
           <input type="text" id="aura" name="aura" class="y" size="41">
           <button type="button" onclick="salvarNoLocalStorage('aura')">Salvar</button>
-      </td>
-  </tr>
+        </td>
+      </tr>
+      <tr>
+        <td class="a">Potencial:</td>
+        <td>
+          <input type="text" id="potencial" name="potencial" class="y" size="41">
+          <button type="button" onclick="salvarNoLocalStorage('potencial')">Salvar</button>
+        </td>
+      </tr>
+      <tr>
+        <td class="a">Perícias:</td>
+        <td>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item13">
+            Acrobacia - Corpo <label for="numeroinput"></label>
+            <input type="text" id="numeroinput" value="0" readonly>
+            <button onclick="adicionarNumero('numeroinput')">+</button>
+            <button onclick="subtrairNumero('numeroinput')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item14">
+            Adestramento - Mente <label for="numeroInput"></label>
+            <input type="text" id="numero" value="0" readonly>
+            <button onclick="adicionarNumero('numero')">+</button>
+            <button onclick="subtrairNumero('numero')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item15">
+            Assassinar - Corpo <label for="numeroInput"></label>
+            <input type="text" id="valor" value="0" readonly>
+            <button onclick="adicionarNumero('valor')">+</button>
+            <button onclick="subtrairNumero('valor')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item16">
+            Atletismo - Corpo <label for="numeroInput"></label>
+            <input type="text" id="number" value="0" readonly>
+            <button onclick="adicionarNumero('number')">+</button>
+            <button onclick="subtrairNumero('number')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item17">
+            Ciências - Mente
+            <label for="numeroInput"></label>
+            <input type="text" id="value" value="0" readonly>
+            <button onclick="adicionarNumero('value')">+</button>
+            <button onclick="subtrairNumero('value')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item18">
+            Destreza - Corpo <label for="numeroInput"></label>
+            <input type="text" id="um" value="0" readonly>
+            <button onclick="adicionarNumero('um')">+</button>
+            <button onclick="subtrairNumero('um')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item19">
+            Estratégia - Mente <label for="numeroInput"></label>
+            <input type="text" id="dois" value="0" readonly>
+            <button onclick="adicionarNumero('dois')">+</button>
+            <button onclick="subtrairNumero('dois')">-</button>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item20">
+              Furtividade - Aura <label for="numeroInput"></label>
+              <input type="text" id="tres" value="0" readonly>
+              <button onclick="adicionarNumero('tres')">+</button>
+              <button onclick="subtrairNumero('tres')">-</button>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" class="chkbox" id="item21">
+              História - Mente <label for="numeroInput"></label>:</label>
+              <input type="text" id="quatro" value="0" readonly>
+              <button onclick="adicionarNumero('quatro')">+</button>
+              <button onclick="subtrairNumero('quatro')">-</button>
+            </div>
+            <input type="checkbox" class="chkbox" id="item22">
+            Iniciativa - Corpo <label for="numeroInput"></label>
+            <input type="text" id="cinco" value="0" readonly>
+            <button onclick="adicionarNumero('cinco')">+</button>
+            <button onclick="subtrairNumero('cinco')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item23">
+            Intimidação - Mente <label for="numeroInput"></label>
+            <input type="text" id="seis" value="0" readonly>
+            <button onclick="adicionarNumero('seis')">+</button>
+            <button onclick="subtrairNumero('seis')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item24">
+            Investigação - Mente <label for="numeroInput"></label>
+            <input type="text" id="sete" value="0" readonly>
+            <button onclick="adicionarNumero('sete')">+</button>
+            <button onclick="subtrairNumero('sete')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item25">
+            Luta - Corpo <label for="numeroInput"></label>
+            <input type="text" id="oito" value="0" readonly>
+            <button onclick="adicionarNumero('oito')">+</button>
+            <button onclick="subtrairNumero('oito')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item26">
+            Medicina - Mente <label for="numeroInput"></label>
+            <input type="text" id="nove" value="0" readonly>
+            <button onclick="adicionarNumero('nove')">+</button>
+            <button onclick="subtrairNumero('nove')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item27">
+            Pilotagem - Corpo <label for="numeroInput"></label>
+            <input type="text" id="dez" value="0" readonly>
+            <button onclick="adicionarNumero('dez')">+</button>
+            <button onclick="subtrairNumero('dez')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item28">
+            Profissão - ( escolha do mestre ) <input type="text" id="profissao" name="profissao" class="y" size="10">
+            <button type="button" onclick="salvarNoLocalStorage('profissao')">Salvar</button> <label
+              for="numeroInput"></label>
+            <input type="text" id="onze" value="0" readonly>
+            <button onclick="adicionarNumero('onze')">+</button>
+            <button onclick="subtrairNumero('onze')">-</button>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" class="chkbox" id="item29">
+            Religião - Mente <label for="numeroInput"></label>
+            <input type="text" id="doze" value="0" readonly>
+            <button onclick="adicionarNumero('doze')">+</button>
+            <button onclick="subtrairNumero('doze')">-</button>
+          </div>
+          <input type="checkbox" class="chkbox" id="item30">
+          Sobrevivência - Mente <label for="numeroInput"></label>
+          <input type="text" id="treze" value="0" readonly>
+          <button onclick="adicionarNumero('treze')">+</button>
+          <button onclick="subtrairNumero('treze')">-</button>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item31">
+    Tecnologia - Mente <label for="numeroInput"></label>
+    <input type="text" id="quatorze" value="0" readonly>
+    <button onclick="adicionarNumero('quatorze')">+</button>
+    <button onclick="subtrairNumero('quatorze')">-</button>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item32">
+    Treinamento - Corpo <label for="numeroInput"></label>
+    <input type="text" id="quinze" value="0" readonly>
+    <button onclick="adicionarNumero('quinze')">+</button>
+    <button onclick="subtrairNumero('quinze')">-</button>
+  </div>
+  <div class="checkbox">
+    <input type="checkbox" class="chkbox" id="item33">
+    Vontade - Mente/Aura <label for="numeroInput"></label>
+    <input type="text" id="dezesseis" value="0" readonly>
+    <button onclick="adicionarNumero('dezesseis')">+</button>
+    <button onclick="subtrairNumero('dezesseis')">-</button>
+  </div>
   <tr>
-    <td class="a">Potencial:</td>
-    <td>
-        <input type="text" id="potencial" name="potencial" class="y" size="41">
-        <button type="button" onclick="salvarNoLocalStorage('potencial')">Salvar</button>
     </td>
-</tr>
-    <tr>
-      <td class="a">Perícias:</td>
-      <td><div class="checkbox">
-        <input type="checkbox" class="chkbox" id="item13">
-        Acrobacia - Corpo
-      </div>
-      <div class="checkbox">
-        <input type="checkbox" class="chkbox" id="item14">
-        Adestramento - Mente
-      </div>
-      <div class="checkbox">
-        <input type="checkbox" class="chkbox" id="item15">
-        Assassinar  - Corpo
-      </div>
-      <div class="checkbox">
-        <input type="checkbox" class="chkbox" id="item16">
-        Atletismo - Corpo
-      </div>
-      <div class="checkbox">
-        <input type="checkbox" class="chkbox" id="item17">
-        Ciências - Mente
-      <div class="checkbox">
-        <input type="checkbox" class="chkbox" id="item18">
-        Destreza - Corpo
-      </div>
-      <div class="checkbox">
-        <input type="checkbox" class="chkbox" id="item19">
-        Estratégia - Mente
-      <div class="checkbox">
-        <input type="checkbox" class="chkbox" id="item20">
-        Furtividade  - Aura
-      </div>
-      <div class="checkbox">
-        <input type="checkbox" class="chkbox" id="item21">
-        História - Mente
-      </div>
-        <input type="checkbox" class="chkbox" id="item22">
-        Iniciativa - Corpo
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item23">
-              Intimidação - Mente
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item24">
-              Investigação - Mente
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item25">
-              Luta - Corpo
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item26">
-              Medicina - Mente
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item27">
-              Pilotagem - Corpo
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item28">
-              Profissão - ( escolha do mestre ) <input type="text" id="profissao" name="profissao" class="y" size="10">   <button type="button" onclick="salvarNoLocalStorage('profissao')">Salvar</button>
+  </tr>
+  </div>
+  </td>
+  </tr>
 
-            </div>
-            <div class="checkbox">
-              <input type="checkbox" class="chkbox" id="item29">
-              Religião - Mente
-            </div>
-              <input type="checkbox" class="chkbox" id="item30">
-              Sobrevivência - Mente
-                  </div><div class="checkbox">
-                    <input type="checkbox" class="chkbox" id="item31">
-                    Tecnologia - Mente
-                  </div>
-                  <div class="checkbox">
-                    <input type="checkbox" class="chkbox" id="item32">
-                    Treinamento  - Corpo
-                  </div>
-                  <div class="checkbox">
-                    <input type="checkbox" class="chkbox" id="item33">
-                    Vontade - Mente/Aura
-                  </div>  
-        <tr>
-           </td>
-        </tr>
-      </div> </td>
-    </tr>
-    
-    </tr>
+  </tr>
   </table>
-  <h4>Por fim, finalmente e nos finais, temos um espaço aqui para você fazer anotações sobre toda e qualquer coisa que quiser</h4>
+  <h4>Por fim, finalmente e nos finais, temos um espaço aqui para você fazer anotações sobre toda e qualquer coisa que
+    quiser</h4>
   <h3>Dica:anote os números</h3>
   <label for="backstory" class="backstory">Sua trajetória:</label>
   <textarea id="backstory" name="backstory" rows="5" cols="40"></textarea>
   <button type="button" onclick="salvarNoLocalStorage('backstory')">Salvar</button>
+
 </html>
