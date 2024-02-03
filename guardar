@@ -50,3 +50,26 @@
 
 
   edição 351-357
+
+  let numeroAtual = 0;
+
+function adicionarNumero() {
+    numeroAtual++;
+    // alert(numeroAtual)
+    atualizarInputNumero();
+    salvarNoLocalStorage();
+}
+
+function subtrairNumero() {
+    numeroAtual--;
+    // alert(numeroAtual)
+    atualizarInputNumero();
+    salvarNoLocalStorage();
+}
+
+function atualizarInputNumero() {
+    const inputNumero = document.getElementById('numeroInput');
+    inputNumero.value = numeroAtual;
+}
+numeroAtual = localStorage.getItem('numeroAtual') || 0;
+atualizarInputNumero();

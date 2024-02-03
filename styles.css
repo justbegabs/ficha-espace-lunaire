@@ -45,6 +45,11 @@ td {
   color: white;
 }
 
+thead {
+  text-align: center;
+  margin-left: 40%;
+}
+
 .a {
   font-family: 'semi-coder';
   color: rgb(255, 230, 0);
@@ -59,6 +64,34 @@ td {
   background-color: black;
   color: white;
   font-family: 'semi-coder';
+}
+
+.r {
+  background-color: rgb(26, 110, 0);
+  color: black;
+  font-family: 'semi-coder';
+  height: 25px; width:25px;
+}
+
+.v {
+  background-color: rgb(255, 0, 0);
+  height: 25px; width:25px;
+}
+
+.j {
+  color: rgb(255, 0, 76);
+}
+
+.k {
+  color: rgb(255, 136, 0);
+}
+
+.m {
+  color: rgb(0, 255, 98);
+}
+
+.f {
+  color: rgb(255, 0, 76);
 }
 
 .white {
@@ -99,19 +132,23 @@ td {
   display: none;
 }
 
-.historia{
-font-family: "semi-coder";
-color: rgb(255, 230, 0);
-}
-
-.story{
+.historia {
   font-family: "semi-coder";
   color: rgb(255, 230, 0);
 }
 
-.backstory{
+.story {
   font-family: "semi-coder";
   color: rgb(255, 230, 0);
+}
+
+.backstory {
+  font-family: "semi-coder";
+  color: rgb(255, 230, 0);
+}
+
+.central {
+  text-align: center;
 }
 
 textarea#story {
@@ -132,3 +169,23 @@ textarea#historia {
   font-family: 'semi-coder';
 }
 
+textarea#blablabla {
+  background-color: black;
+  color: white;
+  font-family: 'semi-coder';
+}
+
+.blablabla {
+  font-family: "semi-coder";
+  color: rgb(255, 230, 0);
+}
+
+textarea {
+  resize: both;
+  overflow: hidden;
+}
+
+.tabela {
+  border: 10px;
+  border-style: solid;
+}

@@ -1,3 +1,6 @@
+let textarea
+let inputNumero
+
 // Função para verificar e definir o estado da checkbox
 function verificarEstadoCheckbox(idEl) {
     // Obtemos o estado salvo no localStorage
@@ -122,7 +125,7 @@ function salvarNoLocalStorage(campo) {
     // Salva o texto diretamente no localStorage
     localStorage.setItem('dados_' + campo, texto);
 
-    alert('Texto salvo no localStorage!');
+    // alert('Texto salvo no localStorage!');
 }
 
 // Carrega os dados do localStorage ao carregar a página (opcional)
@@ -180,4 +183,288 @@ window.onload = function () {
     if (textoSalvoBackstory) {
         document.getElementById('backstory').value = textoSalvoBackstory;
     }
-};
+
+
+    const textoSalvoNumeroInput = localStorage.getItem('dados_numeroinput');
+    if (textoSalvoNumeroInput) {
+        document.getElementById('numeroinput').value = textoSalvoNumeroInput;
+    }
+
+    const textoSalvoNumero = localStorage.getItem('dados_numero');
+    if (textoSalvoNumero) {
+        document.getElementById('numero').value = textoSalvoNumero;
+    }
+
+    const textoSalvoNumber = localStorage.getItem('dados_number');
+    if (textoSalvoNumber) {
+        document.getElementById('number').value = textoSalvoNumber;
+    }
+
+    const textoSalvoValor = localStorage.getItem('dados_valor');
+    if (textoSalvoValor) {
+        document.getElementById('valor').value = textoSalvoValor;
+    }
+
+    const textoSalvoValue = localStorage.getItem('dados_value');
+    if (textoSalvoValue) {
+        document.getElementById('value').value = textoSalvoValue;
+    }
+
+    const textoSalvoUm = localStorage.getItem('dados_um');
+    if (textoSalvoUm) {
+        document.getElementById('um').value = textoSalvoUm;
+    }
+
+    const textoSalvoDois = localStorage.getItem('dados_dois');
+    if (textoSalvoDois) {
+        document.getElementById('dois').value = textoSalvoDois;
+    }
+
+    const textoSalvoTres = localStorage.getItem('dados_tres');
+    if (textoSalvoTres) {
+        document.getElementById('tres').value = textoSalvoTres;
+    }
+
+    const textoSalvoQuatro = localStorage.getItem('dados_quatro');
+    if (textoSalvoQuatro) {
+        document.getElementById('quatro').value = textoSalvoQuatro;
+    }
+
+    const textoSalvoCinco = localStorage.getItem('dados_cinco');
+    if (textoSalvoCinco) {
+        document.getElementById('cinco').value = textoSalvoCinco;
+    }
+
+    const textoSalvoSeis = localStorage.getItem('dados_seis');
+    if (textoSalvoSeis) {
+        document.getElementById('seis').value = textoSalvoSeis;
+    }
+
+    const textoSalvoSete = localStorage.getItem('dados_sete');
+    if (textoSalvoSete) {
+        document.getElementById('sete').value = textoSalvoSete;
+    }
+
+    const textoSalvoOito = localStorage.getItem('dados_oito');
+    if (textoSalvoOito) {
+        document.getElementById('oito').value = textoSalvoOito;
+    }
+
+    const textoSalvoNove = localStorage.getItem('dados_nove');
+    if (textoSalvoNove) {
+        document.getElementById('nove').value = textoSalvoNove;
+    }
+
+    const textoSalvoDez = localStorage.getItem('dados_dez');
+    if (textoSalvoDez) {
+        document.getElementById('dez').value = textoSalvoDez;
+    }
+
+    const textoSalvoOnze = localStorage.getItem('dados_onze');
+    if (textoSalvoOnze) {
+        document.getElementById('onze').value = textoSalvoOnze;
+    }
+
+    const textoSalvoDoze = localStorage.getItem('dados_doze');
+    if (textoSalvoDoze) {
+        document.getElementById('doze').value = textoSalvoDoze;
+    }
+
+    const textoSalvoTreze = localStorage.getItem('dados_treze');
+    if (textoSalvoTreze) {
+        document.getElementById('treze').value = textoSalvoTreze;
+    }
+
+    const textoSalvoQuatorze = localStorage.getItem('dados_quatorze');
+    if (textoSalvoQuatorze) {
+        document.getElementById('quatorze').value = textoSalvoQuatorze;
+    }
+
+    const textoSalvoQuinze = localStorage.getItem('dados_quinze');
+    if (textoSalvoQuinze) {
+        document.getElementById('quinze').value = textoSalvoQuinze;
+    }
+
+    const textoSalvoDezesseis = localStorage.getItem('dados_dezesseis');
+    if (textoSalvoDezesseis) {
+        document.getElementById('dezesseis').value = textoSalvoDezesseis;
+    }
+
+    const textoSalvoBody = localStorage.getItem('dados_body');
+    if (textoSalvoBody) {
+        document.getElementById('body').value = textoSalvoBody;
+    }
+
+    const textoSalvoForça = localStorage.getItem('dados_força');
+    if (textoSalvoForça) {
+        document.getElementById('força').value = textoSalvoForça;
+    }
+
+    const textoSalvoAgilidade = localStorage.getItem('dados_agilidade');
+    if (textoSalvoAgilidade) {
+        document.getElementById('agilidade').value = textoSalvoAgilidade;
+    }
+
+    const textoSalvoResistencia = localStorage.getItem('dados_resistencia');
+    if (textoSalvoResistencia) {
+        document.getElementById('resistencia').value = textoSalvoResistencia;
+    }
+
+    const textoSalvoReadaptar = localStorage.getItem('dados_readaptar');
+    if (textoSalvoReadaptar) {
+        document.getElementById('readaptar').value = textoSalvoReadaptar;
+    }
+
+    const textoSalvoFinta = localStorage.getItem('dados_finta');
+    if (textoSalvoFinta) {
+        document.getElementById('finta').value = textoSalvoFinta;
+    }
+
+    const textoSalvoSentidos = localStorage.getItem('dados_sentidos');
+    if (textoSalvoSentidos) {
+        document.getElementById('sentidos').value = textoSalvoSentidos;
+    }
+
+    const textoSalvoIntuicao = localStorage.getItem('dados_intuicao');
+    if (textoSalvoIntuicao) {
+        document.getElementById('intuicao').value = textoSalvoIntuicao;
+    }
+
+    const textoSalvoPercepcao = localStorage.getItem('dados_percepcao');
+    if (textoSalvoPercepcao) {
+        document.getElementById('percepcao').value = textoSalvoPercepcao;
+    }
+
+    const textoSalvoInstintos = localStorage.getItem('dados_instintos');
+    if (textoSalvoInstintos) {
+        document.getElementById('instintos').value = textoSalvoInstintos;
+    }
+
+    const textoSalvoLinguagem = localStorage.getItem('dados_linguagem');
+    if (textoSalvoLinguagem) {
+        document.getElementById('linguagem').value = textoSalvoLinguagem;
+    }
+
+    const textoSalvoAnalise = localStorage.getItem('dados_analise');
+    if (textoSalvoAnalise) {
+        document.getElementById('analise').value = textoSalvoAnalise;
+    }
+
+    const textoSalvoNen = localStorage.getItem('dados_nen');
+    if (textoSalvoNen) {
+        document.getElementById('nen').value = textoSalvoNen;
+    }
+
+    const textoSalvoAuau = localStorage.getItem('dados_auau');
+    if (textoSalvoAuau) {
+        document.getElementById('auau').value = textoSalvoAuau;
+    }
+
+    const textoSalvoHatsus = localStorage.getItem('dados_hatsus');
+    if (textoSalvoHatsus) {
+        document.getElementById('hatsus').value = textoSalvoHatsus;
+    }
+
+    const textoSalvoManau = localStorage.getItem('dados_manau');
+    if (textoSalvoManau) {
+        document.getElementById('manau').value = textoSalvoManau;
+    }
+
+    const textoSalvoOcau = localStorage.getItem('dados_ocau');
+    if (textoSalvoOcau) {
+        document.getElementById('ocau').value = textoSalvoOcau;
+    }
+
+    const textoSalvoSesan = localStorage.getItem('dados_sesan');
+    if (textoSalvoSesan) {
+        document.getElementById('sesan').value = textoSalvoSesan;
+    }
+
+    const textoSalvoDezessete = localStorage.getItem('dados_dezessete');
+    if (textoSalvoDezessete) {
+        document.getElementById('dezessete').value = textoSalvoDezessete;
+    }
+
+    const textoSalvoBlablabla = localStorage.getItem('dados_blablabla');
+    if (textoSalvoBlablabla) {
+        document.getElementById('blablabla').value = textoSalvoBlablabla;
+    }
+
+}
+
+
+// Carrega o tamanho da textarea do localStorage ao carregar a página
+const tamanhoSalvo = localStorage.getItem('tamanhoTextArea');
+let areatexto = document.getElementById('story');
+
+if (tamanhoSalvo) {
+    const [largura, altura] = tamanhoSalvo.split('x');
+    areatexto.style.width = largura + 'px';
+    areatexto.style.height = altura + 'px';
+}
+
+areatexto.addEventListener('input', () => {
+    const larguraAtual = areatexto.clientWidth;
+    const alturaAtual = areatexto.clientHeight;
+    localStorage.setItem('tamanhoTextArea', `${larguraAtual}x${alturaAtual}`);
+});
+
+
+function adicionarNumero(idEl) {
+    const inputNumero = document.getElementById(idEl);
+    inputNumero.value = parseInt(inputNumero.value) + 1;
+    salvarNoLocalStorage(idEl);
+}
+
+function subtrairNumero(idEl) {
+    const inputNumero = document.getElementById(idEl);
+    inputNumero.value = parseInt(inputNumero.value) - 1;
+    salvarNoLocalStorage(idEl);
+}
+
+function criarPagina() {
+    // Obter o nome da página do input
+    const pageName = document.getElementById('pageName').value;
+
+    if (pageName.trim() === '') {
+        alert('Digite um nome para a página.');
+        return;
+    }
+
+    // Obter a lista de páginas existentes do localStorage ou inicializar uma nova lista vazia
+    const existingPages = JSON.parse(localStorage.getItem('pages')) || [];
+
+    // Verificar se o nome da página já existe
+    if (existingPages.includes(pageName)) {
+        alert('Essa página já existe. Escolha outro nome.');
+        return;
+    }
+
+    // Adicionar a nova página à lista
+    existingPages.push(pageName);
+
+    // Salvar a lista atualizada de páginas no localStorage
+    localStorage.setItem('pages', JSON.stringify(existingPages));
+
+    // Atualizar a exibição das páginas na interface do usuário
+    exibirPaginas();
+}
+
+// Função para exibir as páginas na interface do usuário
+function exibirPaginas() {
+    const paginasContainer = document.getElementById('paginas');
+    const existingPages = JSON.parse(localStorage.getItem('pages')) || [];
+
+    // Limpar o conteúdo existente
+    paginasContainer.innerHTML = '';
+
+    // Exibir cada página na lista
+    existingPages.forEach(page => {
+        const pageElement = document.createElement('div');
+        pageElement.textContent = page;
+        paginasContainer.appendChild(pageElement);
+    });
+}
+
+// Chamar a função de exibição ao carregar a página
+window.onload = exibirPaginas;
