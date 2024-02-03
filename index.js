@@ -423,7 +423,6 @@ function subtrairNumero(idEl) {
 }
 
 function criarPagina() {
-    // Obter o nome da página do input
     const pageName = document.getElementById('pageName').value;
 
     if (pageName.trim() === '') {
@@ -431,40 +430,40 @@ function criarPagina() {
         return;
     }
 
-    // Obter a lista de páginas existentes do localStorage ou inicializar uma nova lista vazia
     const existingPages = JSON.parse(localStorage.getItem('pages')) || [];
 
-    // Verificar se o nome da página já existe
     if (existingPages.includes(pageName)) {
         alert('Essa página já existe. Escolha outro nome.');
         return;
     }
 
-    // Adicionar a nova página à lista
     existingPages.push(pageName);
-
-    // Salvar a lista atualizada de páginas no localStorage
     localStorage.setItem('pages', JSON.stringify(existingPages));
 
-    // Atualizar a exibição das páginas na interface do usuário
     exibirPaginas();
 }
 
-// Função para exibir as páginas na interface do usuário
 function exibirPaginas() {
     const paginasContainer = document.getElementById('paginas');
     const existingPages = JSON.parse(localStorage.getItem('pages')) || [];
 
-    // Limpar o conteúdo existente
     paginasContainer.innerHTML = '';
 
-    // Exibir cada página na lista
     existingPages.forEach(page => {
         const pageElement = document.createElement('div');
         pageElement.textContent = page;
+        pageElement.classList.add('pagina');
+        pageElement.onclick = () => exibirConteudoPagina(page);
         paginasContainer.appendChild(pageElement);
     });
 }
 
-// Chamar a função de exibição ao carregar a página
-window.onload = exibirPaginas;
+function exibirConteudoPagina(page) {
+    const conteudoContainer = document.getElementById('conteudo');
+    conteudoContainer.innerHTML = `<h2>${page}</h2><p>Conteúdo da página ${page}...</p>`;
+}
+
+window.onload = () => {
+    exibirPaginas();
+    exibirConteudoPagina(JSON.parse(localStorage.getItem('pages'))[0] || ''); // Exibe o conteúdo da primeira página por padrão
+};
