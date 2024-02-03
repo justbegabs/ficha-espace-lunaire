@@ -423,21 +423,21 @@ function subtrairNumero(idEl) {
 }
 
 function criarPagina() {
-    const pageName = document.getElementById('pageName').value;
+    const pageName = document.getElementById('pageName').value.trim();
 
-    if (pageName.trim() === '') {
+    if (pageName === '') {
         alert('Digite um nome para a página.');
         return;
     }
 
     let existingPages = localStorage.getItem('pages') || '';
 
-    if (existingPages.includes(pageName)) {
+    if (existingPages.split(',').includes(pageName)) {
         alert('Essa página já existe. Escolha outro nome.');
         return;
     }
 
-    existingPages += pageName + ',';
+    existingPages += (existingPages !== '' ? ',' : '') + pageName;
     localStorage.setItem('pages', existingPages);
 
     exibirPaginas();
@@ -445,7 +445,7 @@ function criarPagina() {
 
 function exibirPaginas() {
     const paginasContainer = document.getElementById('paginas');
-    let existingPages = localStorage.getItem('pages') || '';
+    const existingPages = localStorage.getItem('pages') || '';
 
     paginasContainer.innerHTML = '';
 
@@ -453,20 +453,24 @@ function exibirPaginas() {
         if (page.trim() !== '') {
             const pageElement = document.createElement('div');
             pageElement.textContent = page;
+
+            const openButton = document.createElement('button');
+            openButton.textContent = 'Abrir';
+            openButton.onclick = () => abrirPagina(page);
+
+            pageElement.appendChild(openButton);
+
             pageElement.classList.add('pagina');
-            pageElement.onclick = () => exibirConteudoPagina(page);
             paginasContainer.appendChild(pageElement);
         }
     });
 }
 
-function exibirConteudoPagina(page) {
-    const conteudoContainer = document.getElementById('conteudo');
-    conteudoContainer.innerHTML = `<h2>${page}</h2><p>Conteúdo da página ${page}...</p>`;
+function abrirPagina(page) {
+    const url = `pagina.html?nome=${encodeURIComponent(page)}`;
+    window.open(url, '_blank');
 }
 
 window.onload = () => {
     exibirPaginas();
-    const firstPage = (localStorage.getItem('pages') || '').split(',')[0] || '';
-    exibirConteudoPagina(firstPage);
 };
