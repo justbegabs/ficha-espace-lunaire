@@ -430,31 +430,33 @@ function criarPagina() {
         return;
     }
 
-    const existingPages = JSON.parse(localStorage.getItem('pages')) || [];
+    let existingPages = localStorage.getItem('pages') || '';
 
     if (existingPages.includes(pageName)) {
         alert('Essa página já existe. Escolha outro nome.');
         return;
     }
 
-    existingPages.push(pageName);
-    localStorage.setItem('pages', JSON.stringify(existingPages));
+    existingPages += pageName + ',';
+    localStorage.setItem('pages', existingPages);
 
     exibirPaginas();
 }
 
 function exibirPaginas() {
     const paginasContainer = document.getElementById('paginas');
-    const existingPages = JSON.parse(localStorage.getItem('pages')) || [];
+    let existingPages = localStorage.getItem('pages') || '';
 
     paginasContainer.innerHTML = '';
 
-    existingPages.forEach(page => {
-        const pageElement = document.createElement('div');
-        pageElement.textContent = page;
-        pageElement.classList.add('pagina');
-        pageElement.onclick = () => exibirConteudoPagina(page);
-        paginasContainer.appendChild(pageElement);
+    existingPages.split(',').forEach(page => {
+        if (page.trim() !== '') {
+            const pageElement = document.createElement('div');
+            pageElement.textContent = page;
+            pageElement.classList.add('pagina');
+            pageElement.onclick = () => exibirConteudoPagina(page);
+            paginasContainer.appendChild(pageElement);
+        }
     });
 }
 
@@ -465,5 +467,6 @@ function exibirConteudoPagina(page) {
 
 window.onload = () => {
     exibirPaginas();
-    exibirConteudoPagina(JSON.parse(localStorage.getItem('pages'))[0] || ''); // Exibe o conteúdo da primeira página por padrão
+    const firstPage = (localStorage.getItem('pages') || '').split(',')[0] || '';
+    exibirConteudoPagina(firstPage);
 };
