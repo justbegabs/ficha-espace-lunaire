@@ -175,6 +175,30 @@ textarea#blablabla {
   font-family: 'semi-coder';
 }
 
+textarea#blablablabla {
+  background-color: black;
+  color: white;
+  font-family: 'semi-coder';
+}
+
+textarea#teorias {
+  background-color: black;
+  color: white;
+  font-family: 'semi-coder';
+}
+
+textarea#pessoas {
+  background-color: black;
+  color: white;
+  font-family: 'semi-coder';
+}
+
+textarea#hatsuss {
+  background-color: black;
+  color: white;
+  font-family: 'semi-coder';
+}
+
 .blablabla {
   font-family: "semi-coder";
   color: rgb(255, 230, 0);
@@ -188,4 +212,16 @@ textarea {
 .tabela {
   border: 10px;
   border-style: solid;
+}
+
+.setDiceValue {
+  display: inline-block;
+}
+
+.dado {
+  position: absolute;
+  height: 30px;
+  margin-left: 200px;
+  color: rgb(255, 251, 0);
+  background-color: transparent;
 }

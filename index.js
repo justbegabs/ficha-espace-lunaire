@@ -390,6 +390,25 @@ window.onload = function () {
         document.getElementById('blablabla').value = textoSalvoBlablabla;
     }
 
+    const textoSalvoBlablablabla = localStorage.getItem('dados_blablablabla');
+    if (textoSalvoBlablablabla) {
+        document.getElementById('blablablabla').value = textoSalvoBlablablabla;
+    }
+
+    const textoSalvoTeorias = localStorage.getItem('dados_teorias');
+    if (textoSalvoTeorias) {
+        document.getElementById('teorias').value = textoSalvoTeorias;
+    }
+
+    const textoSalvoPessoas = localStorage.getItem('dados_pessoas');
+    if (textoSalvoPessoas) {
+        document.getElementById('pessoas').value = textoSalvoPessoas;
+    }
+
+    const textoSalvoHatsuss = localStorage.getItem('dados_hatsuss');
+    if (textoSalvoHatsuss) {
+        document.getElementById('hatsuss').value = textoSalvoHatsuss;
+    }
 }
 
 
@@ -419,58 +438,15 @@ function adicionarNumero(idEl) {
 function subtrairNumero(idEl) {
     const inputNumero = document.getElementById(idEl);
     inputNumero.value = parseInt(inputNumero.value) - 1;
-    salvarNoLocalStorage(idEl);
+    salvarNoLocalStorage(idDado);
 }
 
-function criarPagina() {
-    const pageName = document.getElementById('pageName').value.trim();
-
-    if (pageName === '') {
-        alert('Digite um nome para a página.');
-        return;
-    }
-
-    let existingPages = localStorage.getItem('pages') || '';
-
-    if (existingPages.split(',').includes(pageName)) {
-        alert('Essa página já existe. Escolha outro nome.');
-        return;
-    }
-
-    existingPages += (existingPages !== '' ? ',' : '') + pageName;
-    localStorage.setItem('pages', existingPages);
-
-    exibirPaginas();
-}
-
-function exibirPaginas() {
-    const paginasContainer = document.getElementById('paginas');
-    const existingPages = localStorage.getItem('pages') || '';
-
-    paginasContainer.innerHTML = '';
-
-    existingPages.split(',').forEach(page => {
-        if (page.trim() !== '') {
-            const pageElement = document.createElement('div');
-            pageElement.textContent = page;
-
-            const openButton = document.createElement('button');
-            openButton.textContent = 'Abrir';
-            openButton.onclick = () => abrirPagina(page);
-
-            pageElement.appendChild(openButton);
-
-            pageElement.classList.add('pagina');
-            paginasContainer.appendChild(pageElement);
-        }
-    });
-}
-
-function abrirPagina(page) {
-    const url = `pagina.html?nome=${encodeURIComponent(page)}`;
-    window.open(url, '_blank');
-}
-
-window.onload = () => {
-    exibirPaginas();
-};
+function getRandomInterval(min, max) {
+    return Math.floor(min + Math.random() * (max - min + 1));
+  }
+  
+  function setDiceValue(elem) {
+    var x = document.getElementById(elem);
+    console.log(elem, x);
+    x.innerHTML = getRandomInterval(1, 20);
+  }
