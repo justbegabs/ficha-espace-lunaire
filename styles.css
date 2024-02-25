@@ -1,48 +1,48 @@
 body {
-  background: rgb(1, 37, 46)
+  background: rgb(34, 1, 71)
 }
 
 h1 {
-  color: white;
+  color: rgb(212, 180, 253);
   font-family: 'fly-boy';
   font-size: 100px;
 }
 
 h2 {
-  color: white;
+  color: rgb(200, 164, 248);
   font-family: 'semi-coder';
   font-size: s;
 }
 
 h3 {
-  color: rgb(255, 230, 0)
+  color: rgb(101, 13, 160)
 }
 
 h4 {
 
-  color: white;
+  color: rgb(134, 47, 185);
   font-family: 'semi-coder';
 
 }
 
 h5 {
-  color: rgb(255, 230, 0);
+  color: rgb(93, 5, 194);
   text-align: center;
   font-size: xx-large;
   font-family: 'semi-coder';
 }
 
 h6 {
-  color: rgb(30, 255, 0);
+  color: rgb(147, 44, 216);
   font-size: medium;
 }
 
 p {
-  color: rgb(255, 230, 0);
+  color: rgb(145, 43, 204);
 }
 
 td {
-  color: white;
+  color: rgb(109, 8, 177);
 }
 
 thead {
@@ -52,7 +52,7 @@ thead {
 
 .a {
   font-family: 'semi-coder';
-  color: rgb(255, 230, 0);
+  color: rgb(97, 9, 148);
   ;
 }
 
@@ -67,15 +67,17 @@ thead {
 }
 
 .r {
-  background-color: rgb(26, 110, 0);
+  background-color: rgb(24, 0, 110);
   color: black;
   font-family: 'semi-coder';
-  height: 25px; width:25px;
+  height: 25px;
+  width: 25px;
 }
 
 .v {
-  background-color: rgb(255, 0, 0);
-  height: 25px; width:25px;
+  background-color: rgb(106, 6, 116);
+  height: 25px;
+  width: 25px;
 }
 
 .j {
@@ -91,7 +93,7 @@ thead {
 }
 
 .f {
-  color: rgb(255, 0, 76);
+  color: rgb(78, 0, 109);
 }
 
 .white {
@@ -100,7 +102,7 @@ thead {
 }
 
 .amarelo {
-  color: rgb(255, 230, 0);
+  color: rgb(95, 3, 138);
 }
 
 .yellow {
@@ -108,7 +110,7 @@ thead {
 }
 
 .checkbox {
-  color: white;
+  color: rgb(124, 19, 194);
   font-family: 'semi-coder';
 }
 
@@ -122,7 +124,7 @@ thead {
   background-color: transparent;
   border: transparent;
   margin-left: 1%;
-  color: white;
+  color: rgb(105, 10, 230);
   font-family: 'semi-coder';
   font-size: medium;
 
@@ -134,17 +136,17 @@ thead {
 
 .historia {
   font-family: "semi-coder";
-  color: rgb(255, 230, 0);
+  color: rgb(72, 4, 110);
 }
 
 .story {
   font-family: "semi-coder";
-  color: rgb(255, 230, 0);
+  color: rgb(97, 9, 148);
 }
 
 .backstory {
   font-family: "semi-coder";
-  color: rgb(255, 230, 0);
+  color: rgb(97, 9, 148);
 }
 
 .central {
@@ -152,56 +154,56 @@ thead {
 }
 
 textarea#story {
-  background-color: black;
-  color: white;
+  background-color: rgb(16, 1, 29);
+  color: rgb(202, 96, 252);
   font-family: 'semi-coder';
 }
 
 textarea#backstory {
-  background-color: black;
-  color: white;
+  background-color: rgb(16, 1, 29);
+  color: rgb(202, 96, 252);
   font-family: 'semi-coder';
 }
 
 textarea#historia {
-  background-color: black;
-  color: white;
+  background-color: rgb(16, 1, 29);
+  color: rgb(202, 96, 252);
   font-family: 'semi-coder';
 }
 
 textarea#blablabla {
-  background-color: black;
-  color: white;
+  background-color: rgb(16, 1, 29);
+  color: rgb(202, 96, 252);
   font-family: 'semi-coder';
 }
 
 textarea#blablablabla {
-  background-color: black;
-  color: white;
+  background-color: rgb(16, 1, 29);
+  color: rgb(202, 96, 252);
   font-family: 'semi-coder';
 }
 
 textarea#teorias {
-  background-color: black;
-  color: white;
+  background-color: rgb(16, 1, 29);
+  color: rgb(202, 96, 252);
   font-family: 'semi-coder';
 }
 
 textarea#pessoas {
-  background-color: black;
-  color: white;
+  background-color: rgb(16, 1, 29);
+  color: rgb(202, 96, 252);
   font-family: 'semi-coder';
 }
 
 textarea#hatsuss {
-  background-color: black;
-  color: white;
+  background-color: rgb(16, 1, 29);
+  color: rgb(202, 96, 252);
   font-family: 'semi-coder';
 }
 
 .blablabla {
   font-family: "semi-coder";
-  color: rgb(255, 230, 0);
+  color: rgb(97, 9, 148);
 }
 
 textarea {
@@ -222,6 +224,6 @@ textarea {
   position: absolute;
   height: 30px;
   margin-left: 200px;
-  color: rgb(255, 251, 0);
+  color: rgb(97, 9, 148);
   background-color: transparent;
 }
