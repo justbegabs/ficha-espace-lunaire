@@ -4,14 +4,6 @@ body {
 
 h1 {
   color: rgb(212, 180, 253);
-  text-shadow: 0 0 7px #ffffff,
-  0 0 10px #ffffff,
-  0 0 21px #ffffff,
-  0 0 42px rgb(255, 255, 255),
-  0 0 82px rgb(255, 255, 255),
-  0 0 92px rgb(40, 2, 77),
-  0 0 102px rgb(38, 3, 71),
-  0 0 151px rgb(48, 2, 75);
   font-family: 'fly-boy';
   font-size: 100px;
 }
@@ -164,17 +156,17 @@ thead {
   text-align: center;
 }
 
+.lua {
+  margin-top: -270px; 
+  opacity: 40%;
+  width: 100%;
+  border-radius: 20%;
+  position: static;
+}
+
 textarea#story {
   background-color: rgb(16, 1, 29);
   color: rgb(97, 9, 148);
-  text-shadow: 0 0 7px #ffffff,
-  0 0 10px #ffffff,
-  0 0 21px #ffffff,
-  0 0 42px rgb(255, 255, 255),
-  0 0 82px rgb(255, 255, 255),
-  0 0 92px rgb(40, 2, 77),
-  0 0 102px rgb(38, 3, 71),
-  0 0 151px rgb(48, 2, 75);
 font-family: 'semi-coder';
 font-size: medium;
 }
@@ -182,14 +174,6 @@ font-size: medium;
 textarea#backstory {
   background-color: rgb(16, 1, 29);
   color: rgb(97, 9, 148);
-  text-shadow: 0 0 7px #ffffff,
-  0 0 10px #ffffff,
-  0 0 21px #ffffff,
-  0 0 42px rgb(255, 255, 255),
-  0 0 82px rgb(255, 255, 255),
-  0 0 92px rgb(40, 2, 77),
-  0 0 102px rgb(38, 3, 71),
-  0 0 151px rgb(48, 2, 75);
 font-family: 'semi-coder';
 font-size: medium;
 }
@@ -197,14 +181,6 @@ font-size: medium;
 textarea#historia {
   background-color: rgb(16, 1, 29);
   color: rgb(97, 9, 148);
-  text-shadow: 0 0 7px #ffffff,
-  0 0 10px #ffffff,
-  0 0 21px #ffffff,
-  0 0 42px rgb(255, 255, 255),
-  0 0 82px rgb(255, 255, 255),
-  0 0 92px rgb(40, 2, 77),
-  0 0 102px rgb(38, 3, 71),
-  0 0 151px rgb(48, 2, 75);
 font-family: 'semi-coder';
 font-size: medium;
 }
@@ -212,14 +188,6 @@ font-size: medium;
 textarea#blablabla {
   background-color: rgb(16, 1, 29);
   color: rgb(97, 9, 148);
-  text-shadow: 0 0 7px #ffffff,
-  0 0 10px #ffffff,
-  0 0 21px #ffffff,
-  0 0 42px rgb(255, 255, 255),
-  0 0 82px rgb(255, 255, 255),
-  0 0 92px rgb(40, 2, 77),
-  0 0 102px rgb(38, 3, 71),
-  0 0 151px rgb(48, 2, 75);
 font-family: 'semi-coder';
 font-size: medium;
 }
@@ -227,14 +195,6 @@ font-size: medium;
 textarea#blablablabla {
   background-color: rgb(16, 1, 29);
   color: rgb(97, 9, 148);
-  text-shadow: 0 0 7px #ffffff,
-  0 0 10px #ffffff,
-  0 0 21px #ffffff,
-  0 0 42px rgb(255, 255, 255),
-  0 0 82px rgb(255, 255, 255),
-  0 0 92px rgb(40, 2, 77),
-  0 0 102px rgb(38, 3, 71),
-  0 0 151px rgb(48, 2, 75);
 font-family: 'semi-coder';
 font-size: medium;
 }
@@ -242,15 +202,6 @@ font-size: medium;
 textarea#teorias {
   background-color: rgb(16, 1, 29);
   color: rgb(97, 9, 148);
-  text-shadow:
-    0 0 7px #ffffff,
-    0 0 10px #ffffff,
-    0 0 21px #ffffff,
-    0 0 42px rgb(255, 255, 255),
-    0 0 82px rgb(255, 255, 255),
-    0 0 92px rgb(40, 2, 77),
-    0 0 102px rgb(38, 3, 71),
-    0 0 151px rgb(48, 2, 75);
   font-family: 'semi-coder';
   font-size: medium;
 }
@@ -258,14 +209,6 @@ textarea#teorias {
 textarea#pessoas {
   background-color: rgb(16, 1, 29);
   color: rgb(97, 9, 148);
-  text-shadow: 0 0 7px #ffffff,
-  0 0 10px #ffffff,
-  0 0 21px #ffffff,
-  0 0 42px rgb(255, 255, 255),
-  0 0 82px rgb(255, 255, 255),
-  0 0 92px rgb(40, 2, 77),
-  0 0 102px rgb(38, 3, 71),
-  0 0 151px rgb(48, 2, 75);
 font-family: 'semi-coder';
 font-size: medium;
 }
@@ -273,14 +216,6 @@ font-size: medium;
 textarea#hatsuss {
   background-color: rgb(16, 1, 29);
   color: rgb(97, 9, 148);
-  text-shadow: 0 0 7px #ffffff,
-  0 0 10px #ffffff,
-  0 0 21px #ffffff,
-  0 0 42px rgb(255, 255, 255),
-  0 0 82px rgb(255, 255, 255),
-  0 0 92px rgb(40, 2, 77),
-  0 0 102px rgb(38, 3, 71),
-  0 0 151px rgb(48, 2, 75);
 font-family: 'semi-coder';
 font-size: medium;
 }
