@@ -157,12 +157,22 @@ thead {
 }
 
 .lua {
-  margin-top: -270px;
+  margin-top: -8%;
   opacity: 40%;
-  width: 102%;
-  height: 200px;
-  border-radius: 20%;
+  width: 30%;
+  height: 50%;
+  border-radius: 180%;
   position: static;
+}
+
+.luuaa {
+  margin-top: -8%;
+  opacity: 40%;
+  width: 30%;
+  height: 50%;
+  border-radius: 180%;
+  position: static;
+
 }
 
 textarea#story {
